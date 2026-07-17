@@ -1,0 +1,79 @@
+# NexaGrow Digital — robots.txt
+# Website: https://nexagrowdigital.com
+# Last updated: 2026-07-17
+
+# ==============================
+# Allow all crawlers by default
+# ==============================
+User-agent: *
+Allow: /
+
+# Disallow private / system paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /assets/js/
+Disallow: /node_modules/
+
+# Allow CSS & JS for proper rendering
+Allow: /assets/css/
+Allow: /assets/images/
+
+# ==============================
+# Google Search Bot
+# ==============================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /assets/
+
+# ==============================
+# Bing / Microsoft
+# ==============================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# ==============================
+# Other major search engines
+# ==============================
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baidu
+Allow: /
+Crawl-delay: 3
+
+# ==============================
+# Block scrapers & bad bots
+# ==============================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ==============================
+# Sitemap location
+# ==============================
+Sitemap: https://nexagrowdigital.com/sitemap.xml
